@@ -1,14 +1,14 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -27,26 +27,100 @@ code {
     monospace;
 }
 
-.bg-header{
-  background-color: rgb(12, 68, 12);
+.altura {
+  min-height: 100vh;
+}
+
+.bg-main {
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.bg-header {
+  background-color: rgba(59, 153, 59, 0.699);
   color: white;
-  border-bottom: solid black 2px;
+  border-bottom: solid rgb(16, 56, 16) 2px;
 }
 
-.color-nav{
+.color-nav {
   color: white;
-  
 }
 
-.color-nav:hover{
-  color: rgb(19, 221, 137);
-  border-bottom: solid green 1px;
+.color-nav:hover {
+  color: rgb(20, 211, 20);
+  border-bottom: solid rgb(3, 253, 15) 1px;
 }
 
-body{
-  background-color: rgba(133, 158, 133, 0.63);
+body {
+  background-color: rgba(177, 177, 177, 0.63);
 }
 
-.bg-footer{
-  background-color: green;
+.bg-footer {
+  background-color: rgba(105, 105, 105, 0.733);
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+.border-r {
+  border-radius: 200px;
+}
+
+.border-r:hover {
+  width: 53px;
+  height: 53px;
+}
+
+.gridspace {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.producto-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* App.css */
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.masYMenos {
+  background-color: rgb(188, 235, 188);
+  width: 25px;
+  border-radius: 200px;
+}
+
+.masYMenos:hover {
+  background-color: rgba(245, 245, 245, 0.541);
+  width: 25px;
+}
+
+.agregarCarrito {
+  background-color: rgb(188, 235, 188);
+  border-radius: 10px;
+  height: 70px;
+}
+
+.cardPersonalizada {
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.button {
+  border: solid black 1px;
 }
