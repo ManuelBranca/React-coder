@@ -27,6 +27,16 @@ code {
     monospace;
 }
 
+.imagen-chica {
+  width: 10px; 
+  height: 10px; 
+}
+
+.tutienda{
+  color: white;
+  font-size: 30px;
+}
+
 .altura {
   min-height: 100vh;
 }
@@ -123,4 +133,151 @@ body {
 
 .button {
   border: solid black 1px;
+}
+
+/* Productoscaros.css */
+
+.container {
+  margin-top: 20px;
+}
+
+.detalle {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.detalle-imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detalle-descripcion,
+.detalle-precio {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.btn-cerrar-detalle {
+  font-size: 1.2rem;
+}
+
+.card-personalizada {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.product-image {
+  max-height: 100px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+.btn-ver-detalle {
+  font-size: 1rem;
+}
+
+/* Productoscaros.css */
+
+.detalle {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.detalle h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detalle h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.detalle-imagen img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.detalle-descripcion {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.detalle-precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-cerrar-detalle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-cerrar-detalle:hover {
+    background-color: #555;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row-cols-lg-4 .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.card-personalizada {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-ver-detalle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-ver-detalle:hover {
+    background-color: #555;
 }

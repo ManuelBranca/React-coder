@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Numero from "./Numero";
-function Productos() {
+import { collection, query, where, getDocs } from 'firebase/firestore';
+
+function Productoscaros() {
     const { categoria } = useParams();
     const [productos, setProductos] = useState([]);
     const [mostrarDetalle, setMostrarDetalle] = useState(false);
@@ -17,7 +19,7 @@ function Productos() {
                         .filter(producto => producto.price < 50);
                     setProductos(productosFiltrados);
                 } else {
-                    const productosMenosDe50Dolares = data.filter(producto => producto.price < 50);
+                    const productosMenosDe50Dolares = data.filter(producto => producto.price >= 50);
                     setProductos(productosMenosDe50Dolares);
                 }
             })
@@ -52,8 +54,8 @@ function Productos() {
                             alt={detalleProducto.title}
                             className="img-thumbnail"
                         />
-                        <p>Precio: ${detalleProducto.price}</p>
                         <p>Breve descripcion: {detalleProducto.description}</p>
+                        <p>Precio: ${detalleProducto.price}</p>
                         <Numero></Numero>
                         <button onClick={ocultarDetalle} className="btn agregarCarrito h-25 m-2">
                             Cerrar Detalle
@@ -62,7 +64,7 @@ function Productos() {
                 </div>
             ) : (
                 <>
-                    <h1 className="text-center">Vea Nuestros Productos más baratos!</h1>
+                    <h1 className="text-center">Vea Nuestros Mejores Productos!</h1>
                     <div className="mt-2 row row-cols-1 row-cols-md-2 row-cols-lg-4">
                         {productos.map(producto => (
                             <div className="col mb-4" key={producto.id}>
@@ -87,4 +89,4 @@ function Productos() {
     );
 }
 
-export default Productos;
+export default Productoscaros;
